@@ -1,0 +1,477 @@
+:root {
+    --clr-White: hsl(0, 0%, 100%);
+    --clr-Black: hsl(0, 0%, 0%);
+    --Dark-Gray: hsl(0, 0%, 55%);
+    --Very-Dark-Gray: hsl(0, 0%, 41%);
+}
+
+
+*{
+    font-family: 'Alata', sans-serif;
+    margin:0;
+    padding:0;
+    font-size:15px;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr;
+    max-width:1440px;;
+}
+
+header {
+    background-image: url(./images/mobile/image-hero.jpg);
+   background-position: center;
+   background-repeat: no-repeat;
+   background-size:cover;
+   padding-bottom:7.5rem;
+   max-width: 1440px;
+}
+
+
+.header-top{
+display: flex;
+justify-content: space-between;
+align-items: center;
+padding:2rem;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+    font-weight: 300;
+    font-family: 'Josefin Sans', sans-serif;
+}
+
+a:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    padding-bottom:0.4rem;
+    
+}
+
+li {
+    margin:1rem 0;
+    list-style: none;
+}
+
+h1 {
+    color:white;
+    font-size: 2.8rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+    border: 1px solid white;
+    padding:1.3rem 1.5rem;
+    margin:7rem 1.5rem;
+}
+
+.desktop-menu {
+    display:none;
+}
+
+.slider-menu{
+    display:none ;
+    position:absolute;
+    top:0;
+    right:0;
+    background-color: var(--clr-Black);
+    width:100vw;
+    height:100vh;
+    transition: all 0.5s ease-out;
+    } 
+
+.top {
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:3rem 1.9rem;
+}
+
+.top-logo {
+    width:40%;
+}
+.slider-menu nav ul a {
+    text-transform: uppercase;
+    font-size: 1.4rem;
+}
+
+.slider-menu nav ul li{
+   margin:1.8rem 0;
+}
+
+
+.block {
+    text-align: center;
+    margin:6rem 1.5rem;
+}
+
+.interactive {
+    width:100%;
+}
+
+
+h2 {
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin:2.5rem 0 1rem 0;
+    color: var(--clr-Black);
+}
+
+p {
+    color:var(--Dark-Gray);
+    line-height: 1.8;
+    padding:0 2.2rem;
+    font-size: 0.9rem;
+}
+
+h3 {
+    color:var(--clr-White);
+    text-align: left;
+    font-size: 1.5rem;
+    padding:3.3rem 1.3rem 1rem 1.3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    font-weight: 300;
+    text-transform: uppercase;
+
+}
+
+.earth {
+    background-image: url(./images/mobile/image-deep-earth.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+.arcade {
+    background-image: url(./images/mobile/image-night-arcade.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+.soccer {
+    background-image: url(./images/mobile/image-soccer-team.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+.grid {
+    background-image: url(./images/mobile/image-grid.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+.vr {
+    background-image: url(./images/mobile/image-from-above.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+.borealis {
+    background-image: url(./images/mobile/image-pocket-borealis.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+
+.curiosity {
+    background-image: url(./images/mobile/image-curiosity.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+
+
+.fisheye {
+    background-image: url(./images/mobile/image-fisheye.jpg);
+    background-size: cover;
+    margin:1.5rem 0;
+}
+
+button {
+       background-color: transparent;
+       text-transform: uppercase;
+       padding:0.5rem 3rem;
+       letter-spacing: 0.3rem;
+       margin:0.5rem 0;
+}
+
+button:hover {
+    background-color: var(--clr-Black);
+    color:var(--clr-White);
+    cursor: pointer;
+}
+
+.desktop {
+    display: none;
+}
+
+footer {
+    text-align: center;
+    background-color: black;
+    padding: 3rem 0 0 0;
+}
+
+i{
+    color: white;
+    margin: 0 0.3rem;
+}
+
+i:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+}
+
+.desktop-footer {
+    display: none;
+}
+
+@media only screen and (min-width:768px) {
+
+    .hamburger {
+        display:none;
+    }
+
+    .desktop-menu {
+        display: flex;
+    }
+
+    .desktop-menu ul {
+        display:flex;
+        gap:1rem;
+    }
+
+    .top-logo {
+        width:20%;
+    }
+
+    .header-top {
+       padding: 0rem 4rem;
+    }
+
+    header {
+        background-image: url(./images/desktop/image-hero.jpg);
+        padding-bottom:4rem;
+    }
+
+    h1 {
+        margin:0rem 4rem 0 4rem;
+        padding-right:0;
+        max-width:25rem;
+    }
+
+    .block {
+        padding:0 3rem;
+    }
+
+    .interactive {
+        width:60%;
+        float:left;
+    }
+
+    .block:nth-of-type(1){
+        display: flex;
+    }
+
+    .text {
+        position: absolute;
+       width:380px;
+       
+        right:0rem;
+        top:93%;
+        text-align: left;
+        padding:3.8rem;
+        background-color: white;
+    }
+
+    .text h2 {
+        margin:0;
+        font-size: 1.5rem;
+    }
+
+
+    .text p {
+        font-size: 0.6rem;
+        line-height: 1.4;
+        margin-top:1rem;
+    }
+
+    .block:nth-of-type(2) .wrap{
+        display:flex;
+        justify-content: space-evenly;
+        gap:1rem 0;
+        flex-wrap: wrap;
+        
+    }
+
+    .mobile {
+        display: none;
+    }
+
+    .desktop{
+        display: flex;
+        align-items: center;
+        padding:0.2rem 1.5rem;
+        font-size: 0.7rem;
+    }
+
+    .bar {
+        display:flex;
+        justify-content: space-between;
+        padding:0 0.8rem;
+        align-items: center;
+        margin-bottom:1rem;
+    }
+
+    h3 {
+        
+        margin-top:12rem;
+       
+    }
+
+    .earth {
+        background-image: url(./images/desktop/image-deep-earth.jpg);
+        background-size: cover;
+        margin: 0;
+        width:23%;
+    }
+    
+    .arcade {
+        background-image: url(./images/desktop/image-night-arcade.jpg);
+        background-size: cover;
+        margin: 0;
+        width:23%;
+    }
+    
+    .soccer {
+        background-image: url(./images/desktop/image-soccer-team.jpg);
+        background-size: cover;
+        margin: 0;
+        width:23%;
+    }
+    
+    .grid {
+        background-image: url(./images/desktop/image-grid.jpg);
+        background-size: cover;
+        margin: 0;
+        width:23%;
+    }
+    
+    .vr {
+        background-image: url(./images/desktop/image-from-above.jpg);
+        background-size: cover;
+        margin:0;
+        width:23%;
+    }
+    
+    .borealis {
+        background-image: url(./images/desktop/image-pocket-borealis.jpg);
+        background-size: cover;
+        margin: 0;
+        width:23%;
+    }
+    
+    
+    .curiosity {
+        background-image: url(./images/desktop/image-curiosity.jpg);
+        background-size: cover;
+        margin:0;
+        width:23%;
+    }
+    
+    
+    
+    .fisheye {
+        background-image: url(./images/desktop/image-fisheye.jpg);
+        background-size: cover;
+        margin: 0;
+        width:23%;
+    }
+
+ 
+    .block .text p {
+        padding:0;
+    }
+
+    .mobile-footer {
+        display:none;
+    }
+
+    footer {
+     padding:1.5rem;
+    }
+
+    .desktop-footer {
+        display:flex;
+        justify-content: space-between;
+        align-items: center;
+        
+    }
+
+    .desktop-footer ul li {
+        margin:0.3rem 0;
+    }
+    
+    
+
+    .desktop-footer ul li a {
+        margin-right:1rem;
+        font-size: 0.8rem;
+    }
+    
+    .desktop-footer i {
+        margin-left:0.4rem;
+
+    }
+}
+
+@media only screen and (min-width:1200px) {
+   
+    header {
+    padding-bottom:6rem;
+   
+}
+  
+    h1 {
+        margin-top:2rem;
+    }
+
+    main {
+        padding: 0 5rem;
+    }
+
+    
+    .text {
+        right:5rem;
+        top:105%;
+        width:580px;
+
+    }
+
+    .text h2 {
+        font-size:2.4rem;
+    }
+
+    .text p {
+        font-size:1rem;
+    }
+
+    
+    h3 {
+        
+        margin-top:23rem;
+       
+    }
+ 
+
+
+}
